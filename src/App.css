@@ -1,22 +1,91 @@
-.App {
+.welcome-page {
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(assets/images/home-back-large.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'SonySketch', sans-serif;
+  padding: 30px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
+.roto-holder {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -20;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.roto-logo {
+  width: 100%;
+  opacity: 0.3;
+  animation: rotation 12s infinite linear;
+  transition: all 1s;
 }
 
-.App-link {
-  color: #09d3ac;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.roto-logo:hover {
+  opacity: 1;
+}
+
+.welcome-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.text-woodgod {
+  font-family: 'WoodgodCondensed';
+  font-size: 400%;
+  animation-name: moveInTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.welcome-msg span {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.clock {
+  font-size: 2rem;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }

@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import logo from './assets/images/logo-260.png';
+import Clock from './Clock';
+
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      deadline: 'July 20, 2020'
+    };
+  }
+
+  render() {
+
+    return (
+      <div className="welcome-page">
+        <div className="welcome-msg">
+          <div className="roto-holder">
+            <img className="roto-logo" src={logo} alt="Elysium Island Logo" />
+          </div>
+          <h2 className="text-woodgod">Elysium Island</h2>
+          <h1 className="header-main welcome-text--h1" >
+            <span>
+              Thank you for participating in 2019 edition.
+          </span>
+          </h1>
+          <h2>
+            <span>
+              See you next year!
+          </span>
+          </h2>
+          
+          <Clock deadline={this.state.deadline} />
+        </div>
+
+      </div>
+    );
+  }
 }
 
 export default App;
