@@ -1,0 +1,36 @@
+@import "assets/sass/abstracts/mixins";
+@import "assets/sass/abstracts/variables";
+
+@import "assets/sass/base/animations";
+@import "assets/sass/base/base";
+@import "assets/sass/base/typography";
+@import "assets/sass/base/utilities";
+
+// COMPONENTS
+
+@import "assets/sass/components/header";
+@import "assets/sass/components/menu";
+@import "assets/sass/components/banner";
+@import "assets/sass/components/content-holder";
+@import "assets/sass/components/clock";
+@import "assets/sass/components/subscribeTab";
+@import "assets/sass/components/footer";
+
+@import "assets/sass/layout/grid";
+
+// PAGES
+
+@import "assets/sass/pages/home";
+@import "assets/sass/pages/news";
+@import "assets/sass/pages/guide/guide";
+@import "assets/sass/pages/guide/about";
+@import "assets/sass/pages/guide/faq";
+@import "assets/sass/pages/guide/howTo";
+@import "assets/sass/pages/guide/participate";
+@import "assets/sass/pages/program/program";
+@import "assets/sass/pages/program/temple";
+@import "assets/sass/pages/program/larva";
+@import "assets/sass/pages/program/cinema";
+@import "assets/sass/pages/program/workshops";
+@import "assets/sass/pages/gallery";
+@import "assets/sass/pages/tickets";

@@ -1,0 +1,32 @@
+.video-margin {
+  margin-top: -3.3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+  }
+}
+
+.banner {
+  height: calc(100vh - 22.5rem);
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/pattern.png);
+
+  @media only screen and (max-width: $bp-medium) {
+    height: calc(100vh - 18.5rem);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: calc(100vh - 19rem);
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: calc(100vh - 25rem);
+  }
+
+  &__cd-timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

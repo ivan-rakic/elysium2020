@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap");
+
+@font-face {
+  font-family: "CocoBikeR";
+  src: url("./assets/fonts/CocoBikeR.ttf") format("truetype"),
+    url("./assets/fonts/CocoBikeR.svg#CocoBikeR") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WoodgodCondensed";
+  src: url("./assets/fonts/WoodgodCondensed.ttf") format("truetype"),
+    url("./assets/fonts/WoodgodCondensed.svg#WoodgodCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euforia";
+  src: url("./assets/fonts/Euforia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Talldark";
+  src: url("./assets/fonts/Talldark.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Ubuntu", "Euforia", sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-family: "Euforia", "Ubuntu", sans-serif;
+  font-size: $big-font-size;
+  color: $color-white;
+  text-shadow: 0 0 5px $color-black;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  &--main {
+    letter-spacing: 8px;
+    display: block;
+  }
+}
+
+.heading-secondary {
+  font-family: "Euforia", "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: $huge-font-size;
+  color: $color-white;
+  text-shadow: 0 0 5px $color-black;
+  letter-spacing: 3px;
+}
+
+.paragraph__container {
+  box-sizing: border-box;
+  padding: 3rem 6rem;
+}
+
+.paragraph-w {
+  font-size: 18px;
+  color: $color-white;
+  line-height: 150%;
+  letter-spacing: 0.8px;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 15px;
+    color: $color-white;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.paragraph-subtitle {
+  font-size: 19px;
+  color: $color-primary-light;
+  line-height: 150%;
+  letter-spacing: 0.8px;
+}
